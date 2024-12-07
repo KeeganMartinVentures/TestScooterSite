@@ -33,6 +33,7 @@
             padding: 20px;
         }
         .hero {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -43,6 +44,17 @@
             width: 32%;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 10px; /* Space between images */
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 2em;
+            z-index: 1;
         }
         .products {
             display: flex;
@@ -80,6 +92,7 @@
             <img src="scooter1.png" alt="Scooter 1">
             <img src="scooter2.png" alt="Scooter 2">
             <img src="scooter3.png" alt="Scooter 3">
+            <div class="hero-text">Ride the Future</div>
         </section>
         <section id="products">
             <h2>Our Scooters</h2>

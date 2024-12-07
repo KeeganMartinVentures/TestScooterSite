@@ -20,6 +20,10 @@
             justify-content: space-between; /* Spread out items */
             padding: 5px 20px; /* Smaller header with padding */
             height: 60px; /* Reduce header height */
+            position: fixed; /* Fix the header */
+            width: 100%; /* Full width */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it's above other content */
         }
         header img {
             height: 40px; /* Larger logo */
@@ -46,6 +50,10 @@
             justify-content: center;
             background: #444; /* Darker nav background */
             padding: 10px 0;
+            position: fixed; /* Fix the nav */
+            width: 100%; /* Full width */
+            top: 60px; /* Below the header */
+            z-index: 1000; /* Ensure it's above other content */
         }
         nav a {
             color: white;
@@ -60,6 +68,7 @@
         .main-images {
             padding: 0;
             background: #fff; /* White background for main images */
+            margin-top: 120px; /* Space for fixed header and nav */
         }
         .hero {
             position: relative;
@@ -173,10 +182,10 @@
     </header>
     <nav>
         <a href="#home">Home</a>
-        <a href="#products">Products</a>
+        <a href="#customer-message">Products</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section class="main-images">
+    <section class="main-images" id="home">
         <div class="hero">
             <img src="scooter1.png" alt="Scooter 1">
             <img src="scooter2.png" alt="Scooter 2">
@@ -207,25 +216,9 @@
                 </div>
             </div>
         </section>
-        <section class="customer-message">
+        <section class="customer-message" id="customer-message">
             <h2>Note to Customers!</h2>
             <p>We are currently updating our inventory. Get in touch to see what’s available and to place your order.</p>
             <p>Email us at: <a href="mailto:info@sunrisemotion.net">info@sunrisemotion.net</a></p>
         </section>
-        <section class="supplier-message">
-            <h2>Attention Suppliers!</h2>
-            <p>We are currently seeking high-quality electric scooter products to add to our inventory. If you are a supplier and want us to carry your products, please get in touch with us.</p>
-            <p>Email us at: <a href="mailto:info@sunrisemotion.net">info@sunrisemotion.net</a></p>
-        </section>
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <p>Located in Lititz, PA, we proudly serve local buyers. Connect with us on social media to see our latest offerings and place your orders.</p>
-            <p>Email us at: <a href="mailto:info@sunrisemotion.net">info@sunrisemotion.net</a></p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Sunrise Motion. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-[_{{{CITATION{{{_1{](https://github.com/MartinDavis3/Sunrise-Sunset-From-API/tree/91b7dfd0c2fd34165a091035fd666f4f78d57be3/index.php)
+        <section class="contact-section"> <h2>Contact Us</h2> <p>Located in Lititz, PA, we proudly serve local buyers. Connect with us on social media to see our latest offerings and place your orders.</p> <p>Email us at: <a href="mailto:info@sunrisemotion.net">info@sunrisemotion.net</a></p> </section> </div> <footer> <p>&copy; 2024 Sunrise Motion. All rights reserved.</p> </footer> </body> </html>

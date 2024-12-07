@@ -33,28 +33,16 @@
             padding: 20px;
         }
         .hero {
-            background: url('scootersunrisecropped.png') no-repeat center center;
-            background-size: cover;
-            height: 300px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
-            position: relative;
+            padding: 10px;
+            background: #fff;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* This adds a dark overlay to the background image */
-        }
-        .hero h1 {
-            font-size: 3em;
-            position: relative; /* This makes sure the text is above the overlay */
+        .hero img {
+            width: 32%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .products {
             display: flex;
@@ -89,7 +77,9 @@
     </nav>
     <div class="container">
         <section class="hero">
-            <h1>Ride the Future</h1>
+            <img src="image-url-1" alt="Scooter 1">
+            <img src="image-url-2" alt="Scooter 2">
+            <img src="image-url-3" alt="Scooter 3">
         </section>
         <section id="products">
             <h2>Our Scooters</h2>

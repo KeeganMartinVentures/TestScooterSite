@@ -13,23 +13,29 @@
             color: #fff; /* White text for better contrast */
         }
         header {
-            background: #ff6600;
+            background: linear-gradient(135deg, #ff6600, #ff3300); /* Gradient background */
             color: white;
-            padding: 5px 0; /* Smaller padding for a smaller header */
+            padding: 20px 0; /* Increased padding for more space */
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         header img {
-            height: 40px; /* Adjust the height of the logo */
-            margin-right: 10px;
+            height: 60px; /* Adjust the height of the logo */
+            margin-bottom: 10px; /* Margin below the logo */
             border-radius: 50%; /* Make the logo round */
         }
         header h1 {
             font-family: 'Pacifico', cursive; /* Artistic font */
-            font-size: 2em; /* Adjust the font size */
+            font-size: 2.5em; /* Adjust the font size */
             letter-spacing: 2px; /* Add some letter spacing */
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Add a shadow to the text */
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em; /* Smaller font for the tagline */
+            margin: 0;
         }
         nav {
             display: flex;
@@ -116,6 +122,7 @@
     <header>
         <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Your logo image -->
         <h1>Sunrise Motion</h1>
+        <p>Experience the Ride of Tomorrow</p> <!-- Tagline -->
     </header>
     <nav>
         <a href="#home">Home</a>

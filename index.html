@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
-            color: #333;
+            background: #333; /* Darker background */
+            color: #fff; /* White text for better contrast */
         }
         header {
             background: #ff6600;
@@ -21,7 +21,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #333;
+            background: #444; /* Darker nav background */
             padding: 10px 0;
         }
         nav a {
@@ -29,15 +29,15 @@
             text-decoration: none;
             margin: 0 15px;
         }
-        .container {
+        .main-images {
             padding: 0;
+            background: #fff; /* White background for main images */
         }
         .hero {
             position: relative;
             display: flex;
             align-items: center;
             padding: 0;
-            background: #fff;
             overflow: hidden;
         }
         .hero img {
@@ -64,6 +64,9 @@
                 opacity: 1;
             }
         }
+        .container {
+            padding: 20px; /* Padding for the rest of the body */
+        }
         .products {
             display: flex;
             justify-content: space-around;
@@ -75,9 +78,10 @@
             margin: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             width: 30%;
+            color: #333; /* Dark text for product descriptions */
         }
         footer {
-            background: #333;
+            background: #444; /* Darker footer background */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -94,13 +98,15 @@
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
     </nav>
-    <div class="container">
-        <section class="hero">
+    <section class="main-images">
+        <div class="hero">
             <img src="scooter1.png" alt="Scooter 1">
             <img src="scooter2.png" alt="Scooter 2">
             <img src="scooter3.png" alt="Scooter 3">
             <div class="hero-text">Ride the Future</div>
-        </section>
+        </div>
+    </section>
+    <div class="container">
         <section id="products">
             <h2>Our Scooters</h2>
             <div class="products">

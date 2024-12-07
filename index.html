@@ -30,7 +30,7 @@
             margin: 0 15px;
         }
         .container {
-            padding: 20px;
+            padding: 0;
         }
         .hero {
             position: relative;
@@ -51,9 +51,10 @@
             transform: translate(-50%, -50%);
             color: white;
             text-shadow: 2px 2px 4px #000;
-            font-size: 8em; /* Make text twice as big */
+            font-size: 8em;
             z-index: 1;
-            animation: fadeIn 3s ease-in-out 2s; /* Add a 2-second delay before animation */
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 3s ease-in-out 2s forwards; /* Add a 2-second delay and set to forwards to remain visible */
         }
         @keyframes fadeIn {
             from {

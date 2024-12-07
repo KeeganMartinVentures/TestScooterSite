@@ -19,29 +19,27 @@
             align-items: center;
             justify-content: space-between; /* Spread out items */
             padding: 5px 20px; /* Smaller header with padding */
+            height: 60px; /* Reduce header height */
         }
         header img {
-            height: 30px; /* Small logo */
-            width: 30px; /* Ensure the logo is round */
+            height: 40px; /* Larger logo */
+            width: 40px; /* Ensure the logo is round */
             border-radius: 50%; /* Make the logo round */
             margin-right: 10px;
         }
         header .site-name {
             display: flex;
             align-items: center;
+            font-family: 'Pacifico', cursive; /* Artistic font for site name */
+            font-size: 1.5em; /* Adjusted font size */
+        }
+        header .about-us {
+            text-align: center;
+            font-size: 0.9em; /* Center text telling about what you do */
         }
         header .contact-info {
             font-size: 0.8em;
-        }
-        header .search-bar {
-            display: flex;
-            align-items: center;
-        }
-        header .search-bar input {
-            padding: 5px;
-            border: none;
-            border-radius: 3px;
-            margin-right: 10px;
+            text-align: right;
         }
         nav {
             display: flex;
@@ -154,15 +152,14 @@
 <body>
     <header>
         <div class="site-name">
-            <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Small logo -->
+            <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Larger logo -->
             <h1>Sunrise Motion</h1>
         </div>
-        <div class="contact-info">
-            Call us: (123) 456-7890 | Email: info@sunrisemotion.com
+        <div class="about-us">
+            Affordable, high-quality electric scooters for urban commuting and adventures.
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
+        <div class="contact-info">
+            Call us: (123) 456-7890<br>Email: info@sunrisemotion.com
         </div>
     </header>
     <nav>

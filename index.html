@@ -12,6 +12,20 @@
             background: #333; /* Darker background */
             color: #fff; /* White text for better contrast */
         }
+        header {
+            background: #ff6600;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0; /* Same size as nav bar */
+        }
+        header img {
+            height: 40px; /* Small logo */
+            width: 40px; /* Ensure the logo is round */
+            border-radius: 50%; /* Make the logo round */
+            margin-right: 10px;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -79,7 +93,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3); /* Lighter overlay */
+            background: rgba(0, 0, 0, 0.1); /* Much lighter overlay */
             z-index: 0;
         }
         @keyframes fadeIn {
@@ -121,6 +135,10 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Small logo -->
+        <h1>Sunrise Motion</h1>
+    </header>
     <nav>
         <a href="#home">Home</a>
         <a href="#products">Products</a>
@@ -133,7 +151,6 @@
             <img src="scooter3.png" alt="Scooter 3">
             <div class="hero-overlay"></div> <!-- Add overlay for better text contrast -->
             <div class="hero-text">
-                <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Your logo image -->
                 <h1>Sunrise Motion</h1>
                 <p>Experience the Ride of Tomorrow</p> <!-- Tagline -->
             </div>

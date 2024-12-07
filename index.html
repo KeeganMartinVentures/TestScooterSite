@@ -15,8 +15,14 @@
         header {
             background: #ff6600;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 5px 0; /* Smaller padding for a smaller header */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            height: 40px; /* Adjust the height of the logo */
+            margin-right: 10px;
         }
         nav {
             display: flex;
@@ -90,8 +96,8 @@
 </head>
 <body>
     <header>
+        <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Your logo image -->
         <h1>Sunrise Motion</h1>
-        <p>Your Source for Quality Electric Scooters</p>
     </header>
     <nav>
         <a href="#home">Home</a>

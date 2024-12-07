@@ -53,7 +53,7 @@
             text-align: center; /* Center text */
             z-index: 1;
             opacity: 0; /* Start hidden */
-            animation: fadeIn 3s ease-in-out 2s forwards; /* Add a 2-second delay and set to forwards to remain visible */
+            animation: fadeIn 2s ease-in-out 1s forwards; /* Reduce animation delay */
         }
         .hero-text img {
             height: 80px; /* Adjust the height of the logo */
@@ -71,6 +71,15 @@
         .hero-text p {
             font-size: 1.5em; /* Smaller font for the tagline */
             margin: 0;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 0;
         }
         @keyframes fadeIn {
             from {
@@ -121,6 +130,7 @@
             <img src="scooter1.png" alt="Scooter 1">
             <img src="scooter2.png" alt="Scooter 2">
             <img src="scooter3.png" alt="Scooter 3">
+            <div class="hero-overlay"></div> <!-- Add overlay for better text contrast -->
             <div class="hero-text">
                 <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Your logo image -->
                 <h1>Sunrise Motion</h1>

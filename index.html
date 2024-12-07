@@ -35,16 +35,15 @@
         .hero {
             position: relative;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding: 10px;
             background: #fff;
         }
         .hero img {
-            width: 32%;
+            width: 33.33%; /* Make sure images take up the full width */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 0 10px; /* Space between images */
+            margin: 0; /* Remove margin between images */
         }
         .hero-text {
             position: absolute;
@@ -53,67 +52,8 @@
             transform: translate(-50%, -50%);
             color: white;
             text-shadow: 2px 2px 4px #000;
-            font-size: 2em;
+            font-size: 3em; /* Increase text size */
             z-index: 1;
         }
         .products {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .product {
-            background: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            width: 30%;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Sunrise Motion</h1>
-        <p>Your Source for Quality Electric Scooters</p>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section class="hero">
-            <img src="scooter1.png" alt="Scooter 1">
-            <img src="scooter2.png" alt="Scooter 2">
-            <img src="scooter3.png" alt="Scooter 3">
-            <div class="hero-text">Ride the Future</div>
-        </section>
-        <section id="products">
-            <h2>Our Scooters</h2>
-            <div class="products">
-                <div class="product">
-                    <h3>Scooter Model A</h3>
-                    <p>Description of Scooter Model A.</p>
-                </div>
-                <div class="product">
-                    <h3>Scooter Model B</h3>
-                    <p>Description of Scooter Model B.</p>
-                </div>
-                <div class="product">
-                    <h3>Scooter Model C</h3>
-                    <p>Description of Scooter Model C.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Sunrise Motion. All rights reserved.</p>
-    </footer>
-</body>
-</html>

@@ -17,13 +17,30 @@
             color: white;
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 5px 0; /* Smaller header */
+            justify-content: space-between; /* Spread out items */
+            padding: 5px 20px; /* Smaller header with padding */
         }
         header img {
             height: 30px; /* Small logo */
             width: 30px; /* Ensure the logo is round */
             border-radius: 50%; /* Make the logo round */
+            margin-right: 10px;
+        }
+        header .site-name {
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info {
+            font-size: 0.8em;
+        }
+        header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        header .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
             margin-right: 10px;
         }
         nav {
@@ -136,8 +153,17 @@
 </head>
 <body>
     <header>
-        <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Small logo -->
-        <h1>Sunrise Motion</h1>
+        <div class="site-name">
+            <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Small logo -->
+            <h1>Sunrise Motion</h1>
+        </div>
+        <div class="contact-info">
+            Call us: (123) 456-7890 | Email: info@sunrisemotion.com
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
     </header>
     <nav>
         <a href="#home">Home</a>

@@ -18,11 +18,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10px 0; /* Same size as nav bar */
+            padding: 5px 0; /* Smaller header */
         }
         header img {
-            height: 40px; /* Small logo */
-            width: 40px; /* Ensure the logo is round */
+            height: 30px; /* Small logo */
+            width: 30px; /* Ensure the logo is round */
             border-radius: 50%; /* Make the logo round */
             margin-right: 10px;
         }
@@ -93,7 +93,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.1); /* Much lighter overlay */
+            background: rgba(0, 0, 0, 0.2); /* Slightly darker overlay */
             z-index: 0;
         }
         @keyframes fadeIn {
@@ -151,6 +151,7 @@
             <img src="scooter3.png" alt="Scooter 3">
             <div class="hero-overlay"></div> <!-- Add overlay for better text contrast -->
             <div class="hero-text">
+                <img src="logo1.png" alt="Sunrise Motion Logo"> <!-- Logo image in overlay text -->
                 <h1>Sunrise Motion</h1>
                 <p>Experience the Ride of Tomorrow</p> <!-- Tagline -->
             </div>

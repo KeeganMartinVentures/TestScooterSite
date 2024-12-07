@@ -36,14 +36,13 @@
             position: relative;
             display: flex;
             align-items: center;
-            padding: 10px;
+            padding: 0;
             background: #fff;
+            overflow: hidden;
         }
         .hero img {
-            width: 33.33%; /* Make sure images take up the full width */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 0; /* Remove margin between images */
+            width: 33.33%;
+            margin: 0;
         }
         .hero-text {
             position: absolute;
@@ -52,8 +51,17 @@
             transform: translate(-50%, -50%);
             color: white;
             text-shadow: 2px 2px 4px #000;
-            font-size: 3em; /* Increase text size */
+            font-size: 4em; /* Increase text size */
             z-index: 1;
+            animation: fadeIn 2s ease-in-out; /* Add animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
         .products {
             display: flex;
@@ -64,7 +72,6 @@
             background: white;
             padding: 20px;
             margin: 10px;
-            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             width: 30%;
         }
